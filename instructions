@@ -1,0 +1,39 @@
+create contexts/TodoContext.js
+    - import createContext, useContext
+    - export TodoContext, useTodo, TodoProvider
+    - creating array & methods in TodoContext
+
+create contexts/index.js
+    - exporting all the neccessities from TodoContext
+
+App.jsx
+    - create state for todos
+    - include TodoProvider
+    - define addTodo()
+    - define updateTodo()
+    - define deleteTodo()
+    - define toggleCOmplete()
+    - useEffect() to load all the tasks form the local storage
+    - useEffect() to add the new task to the local storage
+
+create components/index.js
+    - import & export TodoForm, TodoItem
+
+create components/TodoForm.jsx
+    - create a form to add task
+    - create state for a todo
+    - access addTodo() using useTodo hook
+    - create add() to add a new task
+    - add 'value' and 'onChange()' properties to 'input'
+
+create components/TodoItem.jsx
+    - create a 'div' to display the todo items
+    - access updateTodo(), deleteTodo(), toggleComplete() from useTodo hook
+    - create state for isTodoEditable, todoMsg
+    - define editTodo() to update a todo
+    - define toggleCompleted() to toggle the task complete status
+
+App.jsx
+    - add the TodoForm
+    - add the TodoItem, pass prop for 'todo'
+
