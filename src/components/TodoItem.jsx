@@ -20,8 +20,7 @@ function TodoItem({ todo }) {
 
     return (
         <div
-            className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300  text-black ${todo.completed ? "bg-[#c6e9a7]" : "bg-[#ccbed7]"
-                }`}
+            className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300  text-black ${todo.completed ? "bg-[#c6e9a7]" : "bg-[#ccbed7]"}`}
         >
 
             <label className="inline-flex items-center cursor-pointer">
@@ -32,8 +31,7 @@ function TodoItem({ todo }) {
                     onChange={toggleCompleted}
                 />
                 <div
-                    className="h-5 w-5 rounded border border-gray-400 flex items-center justify-center
-               peer-checked:bg-blue-500 peer-checked:border-blue-500 text-white font-bold text-xl"
+                    className="h-5 w-5 rounded border border-gray-400 flex items-center justify-center peer-checked:bg-blue-500 peer-checked:border-blue-500 text-white font-bold text-xl"
                 >
                     {todo.completed && "✓"}
                 </div>
